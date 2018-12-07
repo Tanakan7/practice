@@ -1,0 +1,14 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "knj",
+  "scripts": {
+    "build:html": "bin/build_html.sh",
+    "build:data": "bin/build_data.sh"
+  },
+  "devDependencies": {
+    "ejs-cli": "^2.0.1"
+  }
+}
