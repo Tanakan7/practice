@@ -7,7 +7,7 @@
   "scripts": {
     "build:html": "bin/build_html.sh",
     "build:data": "bin/build_data.sh",
-    "watch:html": "chokidar src/ejs/**/*.ejs -c 'npm run build:html {path}'"
+    "watch:html": "chokidar **/*.ejs -c 'npm run build:html {path}'"
   },
   "devDependencies": {
     "chokidar-cli": "^1.2.1",

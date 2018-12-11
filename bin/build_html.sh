@@ -1,17 +1,11 @@
 echo "----- [build_html.sh] -----"
-echo input: $1
-
-# パスを消してファイル名のみ取得
-INPUT_FILE=$(basename $1)
 
 ejs-cli \
-  --base-dir src/ejs/html/ ${INPUT_FILE} \
+  --base-dir src/ejs/html "**/*.ejs" \
   --out dist/ \
   --options src/ejs/data/bundle.json
 
-# 拡張子置換
-OUTPUT_FILE=${INPUT_FILE/.ejs/.html}
-
+# 整形
 js-beautify \
-  --replace "dist/${OUTPUT_FILE}" \
+  --replace "dist/*.html" \
   --indent-size 2
