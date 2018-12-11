@@ -4,3 +4,8 @@ echo "----- [build_data.sh] -----"
 jq -s add src/ejs/data/common/*.json src/ejs/data/module/*.json | \
   jq '{"data":.}' \
   > src/ejs/data/bundle.json
+
+echo "--- json bundle completed. ---"
+
+npm run build:html
+browser-sync reload

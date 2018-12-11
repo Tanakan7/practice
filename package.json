@@ -8,7 +8,8 @@
     "build:html": "bin/build_html.sh",
     "build:data": "bin/build_data.sh",
     "build:css": "bin/build_css.sh",
-    "watch:html": "chokidar **/*.ejs -c 'npm run build:html'",
+    "watch:html": "chokidar **/*.ejs -c   'npm run build:html'",
+    "watch:data": "chokidar src/ejs/data/**/ -c 'npm run build:data'",
     "watch:css": "chokidar src/scss/* -c 'npm run build:css'",
     "watch:server": "browser-sync start -s 'dist/' -f dist/* --port 8080",
     "watch": "npm-run-all -p watch:*"
