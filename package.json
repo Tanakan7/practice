@@ -10,10 +10,12 @@
     "build:css": "bin/build_css.sh",
     "watch:html": "chokidar **/*.ejs -c 'npm run build:html'",
     "watch:css": "chokidar src/scss/* -c 'npm run build:css'",
+    "watch:server": "browser-sync start -s 'dist/' -f dist/* --port 8080",
     "watch": "npm-run-all -p watch:*"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.2",
+    "browser-sync": "^2.26.3",
     "chokidar-cli": "^1.2.1",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.7",
