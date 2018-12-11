@@ -6,9 +6,12 @@
   "author": "knj",
   "scripts": {
     "build:html": "bin/build_html.sh",
-    "build:data": "bin/build_data.sh"
+    "build:data": "bin/build_data.sh",
+    "watch:html": "chokidar src/ejs/**/*.ejs -c 'npm run build:html {path}'"
   },
   "devDependencies": {
-    "ejs-cli": "^2.0.1"
+    "chokidar-cli": "^1.2.1",
+    "ejs-cli": "^2.0.1",
+    "js-beautify": "^1.8.9"
   }
 }
