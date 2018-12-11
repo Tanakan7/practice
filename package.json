@@ -7,11 +7,17 @@
   "scripts": {
     "build:html": "bin/build_html.sh",
     "build:data": "bin/build_data.sh",
-    "watch:html": "chokidar **/*.ejs -c 'npm run build:html {path}'"
+    "build:css": "bin/build_css.sh",
+    "watch:html": "chokidar **/*.ejs -c 'npm run build:html'"
   },
   "devDependencies": {
+    "autoprefixer": "^9.4.2",
     "chokidar-cli": "^1.2.1",
+    "css-mqpacker": "^7.0.0",
     "ejs-cli": "^2.0.1",
-    "js-beautify": "^1.8.9"
+    "js-beautify": "^1.8.9",
+    "postcss-cli": "^6.0.1",
+    "stylelint": "^9.9.0",
+    "stylelint-config-standard": "^18.2.0"
   }
 }
