@@ -1,19 +1,16 @@
 module.exports = {
-  // extends: ['eslint-config-gnavi'],
+  extends: ['standard'],
   parser: 'babel-eslint',
   env: {
     // 使用環境設定
     browser: true,
   },
-  // globals: {
-  //   // global変数許可設定
-  //   // gNaviGlobalState: true,
-  //   google: true,
-  // },
   rules: {
     // use strictを許可
     'strict': 0,
     // console メソッドを警告
-    'no-console': 1
+    'no-console': 1,
+    // 変数宣言時など、値の縦位置を揃えたい
+    "no-multi-spaces": 0
   },
 };

@@ -15,17 +15,28 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
+        exclude: /node_modules/,
         use: [
           {
             // exclude: /node_modules/,
             loader: 'babel-loader',
             options: {
               presets: [
+                // ['env', {'modules': false, "browsers": ["last 2 versions", "safari >= 7"]}]
                 ['env', {'modules': false}]
               ]
             }
           }
         ]
+      },
+      {
+        enforce: 'pre', // このプロパティが無いloderより先に実行する
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {
+          configFile: './conf/eslintrc.js'
+        }
       }
     ]
   }
