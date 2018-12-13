@@ -14,7 +14,8 @@ postcss src/scss/**/[^_]* \
     cssnano \
     autoprefixer \
     css-mqpacker \
-  --no-map
+  --no-map \
+  --syntax postcss-scss
 
 # 複数のimport.scssがある前提で設計する。ページ別で別々のスタイルを適用したい場合のため。
 # 相当いろいろ試したが、node-sassで複数のinputを設定するのはできなさそう
