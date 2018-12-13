@@ -5,7 +5,7 @@ stylelint --config conf/stylelintrc.js src/scss/*.scss && \
 #   --output dist/css/ \
 #   --output-style compressed && \
 
-postcss src/scss/* \
+postcss src/scss/**/[^_]* \
   --dir dist/css \
   --use \
     postcss-import \
@@ -14,7 +14,6 @@ postcss src/scss/* \
     cssnano \
     autoprefixer \
     css-mqpacker \
-    postcss-scss \
   --no-map
 
 # 複数のimport.scssがある前提で設計する。ページ別で別々のスタイルを適用したい場合のため。
