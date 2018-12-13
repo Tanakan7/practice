@@ -1,13 +1,20 @@
 echo "----- [build_css.sh] -----"
 
 stylelint --config conf/stylelintrc.js src/scss/*.scss && \
-node-sass src/scss/style.scss \
-  --output dist/css/ \
-  --output-style compressed && \
+# node-sass src/scss/style.scss \
+#   --output dist/css/ \
+#   --output-style compressed && \
 
-postcss dist/css/* \
-  --replace \
-  --use autoprefixer css-mqpacker \
+postcss src/scss/* \
+  --dir dist/css \
+  --use \
+    postcss-import \
+    postcss-nesting \
+    postcss-simple-vars \
+    cssnano \
+    autoprefixer \
+    css-mqpacker \
+    postcss-scss \
   --no-map
 
 # 複数のimport.scssがある前提で設計する。ページ別で別々のスタイルを適用したい場合のため。
