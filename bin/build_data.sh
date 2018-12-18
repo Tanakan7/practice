@@ -5,7 +5,6 @@ jq -s add src/ejs/data/common/*.json src/ejs/data/module/*.json | \
   jq '{"data":.}' \
   > src/ejs/data/bundle.json
 
-echo "--- json bundle completed. ---"
-
+# watch時だけ以下を実行したい(npm start時にも不要に実行されてしまう)
 npm run build:html
 browser-sync reload
