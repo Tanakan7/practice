@@ -18,7 +18,7 @@
     "watch:js"    : "chokidar src/js/*         -c 'npm run build:js'",
     "watch:server": "browser-sync start -s 'dist/' -f dist/* --port 8080",
     "clean": "rimraf dist/*",
-    "start": "npm run clean && npm run build ; npm-run-all -p watch:*",
+    "start": "npm run clean && npm run build ; npm-run-all -p watch:*"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.2",
