@@ -1,6 +1,7 @@
 echo "----- [build_css.sh] -----"
 
-stylelint --config conf/stylelintrc.js src/scss/*.scss && \
+stylelint --config conf/stylelintrc.js src/scss/**/*.scss
+
 node-sass src/scss/style.scss \
   --output dist/css/ \
   --output-style compressed
