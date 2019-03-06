@@ -11,6 +11,8 @@ module.exports = {
     // console メソッドを警告
     'no-console': 1,
     // 変数宣言時など、値の縦位置を揃えたい
-    "no-multi-spaces": 0
+    "no-multi-spaces": 0,
+    // 末尾のカンマ
+    "comma-dangle": ["error", "always"],
   },
 };

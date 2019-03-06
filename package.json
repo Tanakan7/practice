@@ -12,7 +12,7 @@
     "build:js"  : "bin/build_js.sh",
     "build"     : "npm-run-all -s build:*",
     "watch:html"  : "chokidar **/*.ejs         -c 'npm run build:html'",
-    "watch:data"  : "chokidar src/ejs/data/**/ -c 'npm run build:data'",
+    "watch:data"  : "chokidar src/ejs/data/**/ -c 'npm run build:data buildByWatch'",
     "watch:css"   : "chokidar src/scss/*       -c 'npm run build:css'",
     "watch:img"   : "chokidar src/img/*        -c 'npm run build:img'",
     "watch:js"    : "chokidar src/js/*         -c 'npm run build:js'",

@@ -21,10 +21,11 @@ stylelint --config conf/stylelintrc.js src/scss/**/*.scss --syntax scss
 ### node-sass版
 
 node-sass src/scss/style.scss \
-  --output dist/css/ \
-  --output-style compressed
+  --output dist/css/
+  # --output-style compressed
 
 postcss dist/css/style.css \
   --replace \
   --use autoprefixer css-mqpacker \
+  --autoprefixer.browsers 'last 2 versions' \
   --no-map
