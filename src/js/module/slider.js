@@ -15,7 +15,7 @@ export default class Slider {
    * duration 任意 アニメーション実行時間 デフォルト1000(ms)
    *
    */
-  constructor({ classObj, maxDisplayNum = 3, slideNum = 3, duration = 1000 }) {
+  constructor ({ classObj, maxDisplayNum = 3, slideNum = 3, duration = 1000 }) {
     this.slider = classObj.slider
     this.scroll = classObj.scroll
     this.prev = classObj.prev
@@ -29,7 +29,7 @@ export default class Slider {
     this.duration = duration
   }
 
-  init() {
+  init () {
     this.initButton()
     this.attachEvent()
   }
@@ -38,7 +38,7 @@ export default class Slider {
    * 初期表示時のprev,nextボタン活性・非活性
    *
    */
-  initButton() {
+  initButton () {
     Array.from(document.getElementsByClassName(this.slider)).forEach((el) => {
       const len = el.getElementsByClassName(this.item).length
 
@@ -53,7 +53,7 @@ export default class Slider {
    * イベント
    *
    */
-  attachEvent() {
+  attachEvent () {
     /*
      * X方向の自動スムーススクロール
      * イージングはeaseOutQuad(jQueryEasingPluginの計算式)固定

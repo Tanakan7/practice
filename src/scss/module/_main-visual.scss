@@ -1,0 +1,16 @@
+.mv {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 56px;
+
+  &__img {
+    margin: 0 auto;
+    width: 940px;
+    height: 300px;
+
+    & > img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
