@@ -11,6 +11,7 @@ module.exports = {
     "selector-list-comma-newline-after": null,
     "rule-empty-line-before": ["always", {"ignore": ["after-comment", "inside-block"]}],
     "length-zero-no-unit": null,
-    "declaration-empty-line-before": null
+    "declaration-empty-line-before": null,
+    "no-invalid-double-slash-comments": null
   }
 };

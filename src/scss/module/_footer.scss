@@ -1,6 +1,16 @@
 @charset "utf-8";
 
-// footer
+/* footer */
 .footer {
-  color: blue;
+  border-top: solid 1px #e0e0e0;
+  height: 64px;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+  }
 }

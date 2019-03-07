@@ -5,6 +5,8 @@ ejs-cli \
   --out dist/ \
   --options src/ejs/data/bundle.json
 
+echo "--- < beautifying... > ---"
+
 # 整形
 js-beautify \
   --replace "dist/*.html" \

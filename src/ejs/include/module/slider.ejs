@@ -1,0 +1,22 @@
+<div class="standard-slider"><!-- 全体をくくる -->
+  <div class="standard-slider__main"><!-- 940px -->
+    <div class="js-slider standard-slider__container">
+      <ul class="js-slider-scroll standard-slider__list">
+        <% for(var i=0; i < data.shopList.length; i++) { -%>
+        <li class="js-scroll-item standard-slider__item">
+          <a href="#">
+            <div class="standard-slider__shop-img">
+              <img src="<%= data.shopList[i].img %>" alt="<%= data.shopList[i].alt %>">
+            </div>
+            <span class="standard-slider__shop-name"><%= data.shopList[i].name %></span>
+            <span class="standard-slider__shop-location"><%= data.shopList[i].location %></span>
+            <span class="standard-slider__shop-price"><%= data.shopList[i].price %></span>
+          </a>
+        </li>
+        <% } -%>
+      </ul>
+    </div><!-- /.standard-slider__container -->
+    <div class="standard-slider__prev"></div>
+    <div class="standard-slider__next"></div>
+  </div><!-- /.standard-slider__main -->
+</div><!-- /.standard-slider -->

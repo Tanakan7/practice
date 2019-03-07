@@ -1,6 +1,16 @@
 @charset "utf-8";
 
-// header
+/* header */
 .header {
-  color: orange;
+  height: 64px;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #e0e0e0;
+
+  &__text {
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+  }
 }

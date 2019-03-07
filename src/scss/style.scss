@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 @import "module/_content.scss";
+@import "./module/_slider.scss";
+@import "./module/_main-visual.scss";
 
 /* settings */
 @import "module/_variable.scss";
@@ -11,7 +13,3 @@
 /* module */
 @import "module/_header.scss";
 @import "module/_footer.scss";
-
-.aaa {
-  color: red;
-}

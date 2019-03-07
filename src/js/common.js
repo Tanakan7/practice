@@ -1,1 +1,1 @@
-require('./_sample')()
+require('./module/_sample')()

@@ -1,0 +1,60 @@
+{
+  "shopList": [
+    {
+      "img": "https://placehold.jp/205x205.png",
+      "alt": "shop1 - alt",
+      "name": "aaaaaaaaaaa",
+      "location": "JR広島駅北口 徒歩1分",
+      "price": "平均予算：2,500円"
+    },
+    {
+      "img": "https://placehold.jp/205x205.png",
+      "alt": "shop2 - alt",
+      "name": "aaaaaaaaaaa",
+      "location": "広島本線胡町駅 徒歩5分",
+      "price": "平均予算：3,000円"
+    },
+    {
+      "img": "https://placehold.jp/205x205.png",
+      "alt": "shop3 - alt",
+      "name": "aaaaaaaaaaa",
+      "location": "JR広島駅 徒歩7分",
+      "price": "平均予算：4,000円"
+    },
+    {
+      "img": "https://placehold.jp/205x205.png",
+      "alt": "shop4 - alt",
+      "name": "aaaaaaaaaaa",
+      "location": "aaaaaaaaaaa",
+      "price": "平均予算：10,000円"
+    },
+    {
+      "img": "https://placehold.jp/205x205.png",
+      "alt": "shop1 - alt",
+      "name": "aaaaaaaaaaa",
+      "location": "JR広島駅北口 徒歩1分",
+      "price": "平均予算：2,500円"
+    },
+    {
+      "img": "https://placehold.jp/205x205.png",
+      "alt": "shop2 - alt",
+      "name": "②焼肉 和炎",
+      "location": "aaaaaaaaaaa",
+      "price": "平均予算：3,000円"
+    },
+    {
+      "img": "https://placehold.jp/205x205.png",
+      "alt": "shop3 - alt",
+      "name": "aaaaaaaaaaa",
+      "location": "JR広島駅 徒歩7分",
+      "price": "平均予算：4,000円"
+    },
+    {
+      "img": "https://placehold.jp/205x205.png",
+      "alt": "shop4 - alt",
+      "name": "②桜下亭",
+      "location": "aaaaaaaaaaa",
+      "price": "平均予算：10,000円"
+    }
+  ]
+}
