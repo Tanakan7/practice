@@ -1,80 +1,31 @@
-# npm-boiler-pug-babel-sass
+# about
 
-- npm-boiler-pug-babel-sassリポジトリ
+- １枚以上の静的ページを作成するためのボイラープレート
 
-
-# package
-
-## package installed
-
-- [package.jsonを参照](package.json)
-
-
-# config
 
 ## install
 
-### install
+  ※ jq に依存しています
+  brew install jq
+  yarn
 
-    npm i
 
+## commands
 
 ### build
 
-    npm run build
+  yarn build
 
-## watch command
+### develop and build server
 
-    npm run watch
-
-## sprite command
-
-    npm run sprite
-
-## clean dist/、tmp/ command
-
-    npm run clean
+  yarn start
 
 
-# ルートディレクトリ構成
+### clean dist
 
-    bin/ : ビルド・デプロイシェル
-    conf. : 設定ファイル
-    dist/ : 出力ディレクトリ
-    src/ : 開発ディレクトリ
-    tmp/ : 中間生成物一時保管ディレクトリ
-    .editorconfig
-    .gitignore
-    package.json
-    README.md
+  yarn clean
 
 
-# 開発ディレクトリ構成
+## about directory
 
-編集対象は src/ 以下のみ
-
-    src/
-      └ pug/
-        └ data/ : data
-        └ include/ : parts
-        └ layout/ : layout
-        └ page/ : page
-      └ img/ : 画像
-      └ sprite/ : スプライト用画像
-      └ js/
-        └ common.js
-        └ _module.js
-      └ scss/
-        └ style.scss
-        └ _module.scss
-
-
-# CSS開発方針
-
-## 設計方針
-
-- [設計方針](設計方針)
-
-## セレクター命名方針
-
-- [MindBEMding](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+  追記予定
