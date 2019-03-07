@@ -14,18 +14,18 @@
 
 ### build
 
-  yarn build
+    yarn build
 
 ### develop and build server
 
-  yarn start
+    yarn start
 
 
 ### clean dist
 
-  yarn clean
+    yarn clean
 
 
 ## about directory
 
-  追記予定
+    追記予定
