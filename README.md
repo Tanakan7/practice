@@ -5,9 +5,9 @@
 
 ## install
 
-  ※ jq に依存しています
-  brew install jq
-  yarn
+    ※ jq に依存しています
+    brew install jq
+    yarn
 
 
 ## commands
