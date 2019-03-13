@@ -2,11 +2,13 @@ const webpack = require('webpack');
 const path = require('path')
 
 module.exports = {
-  entry: './src/js/common.js',
+  entry: {
+    common: './src/js/common.js',
+  },
 
   output: {
-    path: path.resolve(__dirname, './../dist/js'), //'/../dist/js', //ビルドしたファイルを吐き出す場所(絶対パス)
-    filename: 'bundle.js' //ビルドした後のファイル名
+    path: path.resolve(__dirname, './../dist/js'), // ビルドしたファイルを吐き出す場所(絶対パス)
+    filename: '[name].js' // ビルドした後のファイル名
   },
 
   module: {
