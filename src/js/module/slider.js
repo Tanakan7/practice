@@ -15,7 +15,7 @@ export default class Slider {
    * duration 任意 アニメーション実行時間 デフォルト1000(ms)
    *
    */
-  constructor ({ classObj, maxDisplayNum = 3, slideNum = 3, duration = 1000 }) {
+  constructor ({ classObj, maxDisplayNum = 3, slideNum = 3, duration = 1000, }) {
     this.slider = classObj.slider
     this.scroll = classObj.scroll
     this.prev = classObj.prev
@@ -158,7 +158,7 @@ export default class Slider {
         }
       }
 
-      el.getElementsByClassName(this.scroll)[0].addEventListener('scroll', dispButton, { passive: true })
+      el.getElementsByClassName(this.scroll)[0].addEventListener('scroll', dispButton, { passive: true, })
     }) // 各スライダー Array.from(document.getElementsByClassName(this.slider)).forEach((el) =>
   } // attachEvent()
 }

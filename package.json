@@ -20,7 +20,8 @@
     "clean": "rimraf dist/*",
     "start": "npm run clean && npm run build ; npm-run-all -p watch:*",
     "format:css": "stylelint --config stylelintrc.js src/scss/**/*.scss --syntax scss --fix",
-    "pre-commit": "npm run format:css && git add ."
+    "format:js": "eslint src/js/module/**/*.js --config eslintrc.js --fix",
+    "pre-commit": "npm run format:css && npm run format:js && git add ."
   },
   "devDependencies": {
     "autoprefixer": "^9.4.2",
