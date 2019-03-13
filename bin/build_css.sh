@@ -1,6 +1,6 @@
 echo "----- [build_css.sh] -----"
 
-stylelint --config conf/stylelintrc.js src/scss/**/*.scss --syntax scss
+stylelint --config stylelintrc.js src/scss/**/*.scss --syntax scss --fix
 
 ### postcss版
 
