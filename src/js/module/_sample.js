@@ -7,9 +7,9 @@ module.exports = () => {
   const dddd = 3
 
   const aaa = {
-    hoge        : 'aaa',
+    hoge        : 'aaa' ,
     hfeuia      : 'buea',
-    afhaeuhlaih : 'aaa',
+    afhaeuhlaih : 'aaa' ,
   }
   console.log(a, bb, dddd, 'a', aaa.hoge)
 }
