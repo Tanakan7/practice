@@ -1,14 +1,16 @@
+'use strict'
 const webpack = require('webpack');
 const path = require('path')
 
 module.exports = {
   entry: {
     common: './src/js/common.js',
+    common2: './src/js/common2.js',
   },
 
   output: {
     path: path.resolve(__dirname, './../dist/js'), // ビルドしたファイルを吐き出す場所(絶対パス)
-    filename: '[name].js' // ビルドした後のファイル名
+    filename: '[name].js' // ビルド後のファイル名
   },
 
   module: {
