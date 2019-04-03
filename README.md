@@ -42,15 +42,11 @@
 │   │   │       └── shop-list.json
 │   │   ├── html                        // HTMLファイル
 │   │   │   ├── hoge.ejs
-│   │   │   ├── index.ejs
-│   │   │   ├── piyo.ejs
+│   │   │   ├── index.ejs               // 一覧ページ（マークアップファイル一覧表示用）
 │   │   │   └── template.ejs
 │   │   └── include                     // モジュール群
 │   │       ├── common                  // 共通モジュール
-│   │       │   ├── footer-hoge-js.ejs
-│   │       │   ├── footer-js.ejs
 │   │       │   ├── footer.ejs
-│   │       │   ├── head-css.ejs
 │   │       │   ├── head.ejs
 │   │       │   ├── header.ejs
 │   │       │   └── nav.ejs
@@ -64,19 +60,15 @@
 │   │   ├── common2.js
 │   │   └── module                      // 個別のJS
 │   │       ├── _sample.js
-│   │       ├── _sample2.js
-│   │       └── slider.js
+│   │       └── _sample2.js
 │   └── scss
 │       ├── module                      // 各種scssファイル群(フォルダ分けする予定)
 │       │   ├── _common.scss
 │       │   ├── _content.scss
-│       │   ├── _content2.scss
 │       │   ├── _footer.scss
 │       │   ├── _header.scss
 │       │   ├── _main-visual.scss
 │       │   ├── _reset.scss
-│       │   ├── _selector.scss
-│       │   ├── _slider.scss
 │       │   └── _variable.scss
 │       ├── style.scss
 │       └── style2.css
@@ -96,7 +88,6 @@
 │   ├── js
 │   │   ├── common.js
 │   │   └── common2.js
-│   ├── piyo.html
 │   └── template.html
 ├── eslintrc.js                         // (ルートディレクトリに置かないとエディタで設定が反映されない?)
 ├── package-lock.json
@@ -118,3 +109,4 @@
 - [ ] hbsに変えた方がいいかも(vscodeの補完などがejsだと不便)
 - [ ] scssフォルダ内をモジュール群とそうでないものとに分ける
 - [ ] /confフォルダをなくし、webpack.config.jsを移動する
+- [ ] scssコンパイルが一つのファイルしかできていない
