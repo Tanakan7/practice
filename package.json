@@ -10,7 +10,7 @@
     "build:css": "bin/build_css.sh",
     "build:img": "bin/build_img.sh",
     "build:js": "bin/build_js.sh",
-    "build": "npm-run-all -s build:*",
+    "build": "npm-run-all -p build:*",
     "watch:html": "chokidar **/*.ejs -c 'npm run build:html'",
     "watch:data": "chokidar src/ejs/data/**/ -c 'npm run build:data buildByWatch'",
     "watch:css": "chokidar src/scss/* -c 'npm run build:css'",
@@ -58,6 +58,8 @@
     "rimraf": "^2.6.2",
     "stylelint": "^9.9.0",
     "stylelint-config-standard": "^18.2.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3",
     "uglifyjs": "^2.4.11",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
