@@ -15,7 +15,7 @@
     "watch:data": "chokidar src/ejs/data/**/ -c 'npm run build:data buildByWatch'",
     "watch:css": "chokidar src/scss/* -c 'npm run build:css'",
     "watch:img": "chokidar src/img/* -c 'npm run build:img'",
-    "watch:js": "chokidar src/js/* -c 'npm run build:js'",
+    "watch:js": "chokidar src/{js,ts}/* -c 'npm run build:js'",
     "watch:server": "browser-sync start -s 'dist/' -f dist/* --port 8080",
     "clean": "rimraf dist/*",
     "start": "npm run clean && npm run build ; npm-run-all -p watch:*",
