@@ -1,0 +1,26 @@
+.key-visual {
+  background-image: url("./../img/portfolio/mv.png");
+  background-repeat: no-repeat;
+  height: 244px;
+  background-size: contain;
+}
+
+// tablet
+@media screen and (max-width: 979px) {
+  .key-visual {
+    background-image: url("./../img/portfolio/mv_pc.png");
+  }
+}
+
+// sp 最大374のとき
+@media screen and (max-width: 374px) {
+  // .portfolio-header {
+  //   background: blue;
+  // }
+}
+
+// pc 980以上のとき
+@media screen and (min-width: 980px) {
+
+}
+
