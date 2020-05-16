@@ -1,0 +1,79 @@
+.portfolio-header {
+  height: 68px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5F4F0;
+
+  &__text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 21px;
+  }
+
+  &__hoge {
+    position: relative;
+  }
+
+  &__menu {
+    margin-right: 24px;
+    color: #000;
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 10px;
+    width: 24px;
+    height: 2px;
+    background-color: currentColor;
+    top: 24px;
+    right: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: currentColor;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: currentColor;
+    }
+  }
+}
+
+// tablet
+@media screen and (max-width: 979px) {
+  // .portfolio-header {
+  //   background: red;
+  // }
+}
+
+// sp 最大374のとき
+@media screen and (max-width: 374px) {
+  // .portfolio-header {
+  //   background: blue;
+  // }
+}
+
+// pc 980以上のとき
+@media screen and (min-width: 980px) {
+  .portfolio-header {
+    &__text {
+      margin-left: 130px;
+    }
+
+    &__menu {
+      margin-right: 134px;
+    }
+  }
+}
