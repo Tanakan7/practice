@@ -9,7 +9,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, './../dist/js'), // ビルドしたファイルを吐き出す場所(絶対パス)
+    path: path.resolve(__dirname, '../dist/js'), // ビルドしたファイルを吐き出す場所(絶対パス)
     filename: '[name].js' // ビルド後のファイル名
   },
 
@@ -22,12 +22,6 @@ module.exports = {
           {
             // exclude: /node_modules/,
             loader: 'babel-loader',
-            options: {
-              presets: [
-                // ['env', {'modules': false, "browsers": ["last 2 versions", "safari >= 7"]}]
-                ['env', {'modules': false}]
-              ]
-            }
           }
         ]
       },

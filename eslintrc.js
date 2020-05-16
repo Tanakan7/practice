@@ -11,7 +11,7 @@ module.exports = {
     // console メソッドを警告
     'no-console': 1,
     // 末尾のカンマ
-    "comma-dangle": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
     // 以下、vertical align関連の設定。好き嫌い分かれると思います。prettierを入れてないのもこの為です。
     // 変数宣言時など、値の縦位置を揃えたい
     "no-multi-spaces": 0,
