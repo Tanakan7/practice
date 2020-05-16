@@ -1,1 +1,1 @@
-require('./module/_sample2')()
+console.log('2ss')

@@ -1,5 +1,5 @@
 // sample
-module.exports = () => {
+export default () => {
   const a    = 4
   const bb   = 3
   const dddd = 3
