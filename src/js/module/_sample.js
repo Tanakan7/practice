@@ -9,5 +9,5 @@ export default () => {
     hfeuia      : 'buea',
     afhaeuhlaih : 'aaa' ,
   }
-  console.log(a, bb, dddd, 'a', aaa.hoge)
+  console.log(a, bb, dddd, 'a', aaa.hoge) // eslint-disable-line no-console
 }
