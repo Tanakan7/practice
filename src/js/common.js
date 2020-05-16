@@ -1,1 +1,3 @@
-require('./module/_sample')()
+import sample from './module/_sample'
+
+sample()
